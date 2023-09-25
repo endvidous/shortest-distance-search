@@ -1,5 +1,61 @@
 #canvas {
     border: 1px solid #000;
+    background-color: white;
+    box-shadow: 0 0 20px 5px black;
 }
 
-/* Add any additional CSS styles here */
+*{
+    background-color: rgb(75, 72, 72);
+    color: white;
+}
+
+.header p h1{
+    padding: none;
+    margin: none;
+}
+.header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: none;
+    margin: none;
+}
+.body-main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#canvas{
+    margin: none;
+    padding: none;
+}
+
+.button {
+    padding: 5px 10px;
+    margin: 10px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: black;
+    background-color: beige;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 3px #999;
+}
+
+.button:hover {background-color: rgb(170, 158, 113)}
+
+.button:active {
+  background-color: beige;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button-div{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+}

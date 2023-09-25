@@ -3,24 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Traveling Salesman Problem</title>
+    <title>Shortest Distance Search</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Traveling Salesman Problem Solver</h1>
-        <p>Click on the canvas to add cities. Click "Solve TSP" to create a tour.</p>
+    <header class="header">
+        <h1>Shortest Distance Search</h1>
+        <p>Click on the canvas to add Points. Click "Solve" to create a path.</p>
     </header>
 
     <main>
-        <canvas id="canvas" width="500" height="500"></canvas>
-        <button id="solveButton" onclick="solveTSP()">Solve TSP</button>
-        <button id="startPointButton" onclick="selectStartPoint()">Start Point</button>
-        <button id="endPointButton" onclick="selectEndPoint()">End Point</button>
-        <button id="clearButton" onclick="clearPoints()">Clear SUre</button>
-
-        <h2>Total Distance:</h2>
-        <p id="totalDistance"></p>
+    <div class="body-main">
+        <canvas id="canvas" width="800" height="400"></canvas>
+        <div class="button-div">
+            <button class="button" id="solveButton" onclick="solveTSP()">Solve</button>
+            <button class="button" id="startPointButton" onclick="selectStartPoint()">Start Point</button>
+            <button class="button" id="endPointButton" onclick="selectEndPoint()">End Point</button>
+            <button class="button" id="clearButton" onclick="clearPoints()">Clear Points</button>
+        </div>
+        <div class="end-text">
+            <h2>Total Distance:</h2>
+            <p id="totalDistance"></p>
+        </div>
+    </div>
     </main>
 
     <script src="script.js"></script>
