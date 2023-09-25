@@ -38,13 +38,22 @@ canvas.addEventListener("click", (event) => {
 });
 
 function selectStartPoint() {
-    selectingStartPoint = true;
+    
+    if(selectingStartPoint==false){
+        selectingStartPoint = true;
+    }else{
+        selectingStartPoint= false;
+    }
     selectingEndPoint = false;
 }
 
 function selectEndPoint() {
+    if(selectingEndPoint==false){
+        selectingEndPoint = true;
+    }else{
+        selectingEndPoint = false;
+    }
     selectingStartPoint = false;
-    selectingEndPoint = true;
 }
 
 function clearPoints() {
