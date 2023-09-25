@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traveling Salesman Problem</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Traveling Salesman Problem Solver</h1>
+        <p>Click on the canvas to add cities. Click "Solve TSP" to create a tour.</p>
+    </header>
+
+    <main>
+        <canvas id="canvas" width="500" height="500"></canvas>
+        <button id="solveButton" onclick="solveTSP()">Solve TSP</button>
+        <button id="startPointButton" onclick="selectStartPoint()">Start Point</button>
+        <button id="endPointButton" onclick="selectEndPoint()">End Point</button>
+        <button id="clearButton" onclick="clearPoints()">Clear Points</button>
+
+        <h2>Total Distance:</h2>
+        <p id="totalDistance"></p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
